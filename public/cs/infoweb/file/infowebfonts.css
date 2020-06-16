@@ -1,0 +1,52 @@
+/*
+* INFOWEB CLASSES 
+* PJJ1
+* AUGUST 5, 2013
+*/
+/* LOCAL FONT */
+
+
+@font-face {
+  font-family: 'Cabin';  
+  src: url("/cs/infoweb/file/cabin-regular-webfont.eot");
+  src: local('Cabin Regular'), local('Cabin-Regular'), url("/cs/infoweb/file/cabin-regular-webfont.eot?open#iefix") format("embedded-opentype"), url("/cs/infoweb/file/cabin-regular-webfont.woff") format("woff"), url("/cs/infoweb/file/cabin-regular-webfont.ttf") format("truetype"), url("/cs/infoweb/file/cabin-regular-webfont.svg") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+  
+@font-face {
+  font-family: 'Cabin';  
+  src: url("/cs/infoweb/file/cabin-semibold-webfont.eot");
+  src: local('Cabin SemiBold'), local('Cabin-SemiBold'), url("/cs/infoweb/file/cabin-semibold-webfont.eot?open#iefix") format("embedded-opentype"), url("/cs/infoweb/file/cabin-semibold-webfont.woff") format("woff"), url("/cs/infoweb/file/cabin-semibold-webfont.ttf") format("truetype"), url("/cs/infoweb/file/cabin-semibold-webfont.svg") format("svg"); 
+  font-weight: 600;
+  font-style: normal; }
+  
+@font-face {
+  font-family: 'Cabin';  
+  src: url("/cs/infoweb/file/cabin-bold-webfont.eot");
+  src: local('Cabin Bold'), local('Cabin-Bold'), url("/cs/infoweb/file/cabin-bold-webfont.eot?open#iefix") format("embedded-opentype"), url("/cs/infoweb/file/cabin-bold-webfont.woff") format("woff"), url("/cs/infoweb/file/cabin-bold-webfont.ttf") format("truetype"), url("/cs/infoweb/file/cabin-bold-webfont.svg") format("svg"); 
+  font-weight: 700;
+  font-style: normal; } 
+
+@font-face {
+  font-family: 'Cabin';  
+  src: url("/cs/infoweb/file/cabin-italic-webfont.eot");
+  src: local('Cabin Italic'), local('Cabin-Italic'), url("/cs/infoweb/file/cabin-italic-webfont.eot?open#iefix") format("embedded-opentype"), url("/cs/infoweb/file/cabin-italic-webfont.woff") format("woff"), url("/cs/infoweb/file/cabin-italic-webfont.ttf") format("truetype"), url("/cs/infoweb/file/cabin-italic-webfont.svg") format("svg");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Cabin';  
+  src: url("/cs/infoweb/file/cabin-semibolditalic-webfont.eot");
+  src: local('Cabin SemiBold Italic'), local('Cabin-SemiBoldItalic'), url("/cs/infoweb/file/cabin-semibolditalic-webfont.eot?open#iefix") format("embedded-opentype"), url("/cs/infoweb/file/cabin-semibolditalic-webfont.woff") format("woff"), url("/cs/infoweb/file/cabin-semibolditalic-webfont.ttf") format("truetype"), url("/cs/infoweb/file/cabin-semibolditalic-webfont.svg") format("svg");
+  font-weight: 600;
+  font-style: italic; }
+  
+@font-face {
+  font-family: 'Cabin';  
+  src: url("/cs/infoweb/file/cabin-bolditalic-webfont.eot");
+  src: local('Cabin Bold Italic'), local('Cabin-BoldItalic'), url("/cs/infoweb/file/cabin-bolditalic-webfont.eot?open#iefix") format("embedded-opentype"), url("/cs/infoweb/file/cabin-bolditalic-webfont.woff") format("woff"), url("/cs/infoweb/file/cabin-bolditalic-webfont.ttf") format("truetype"), url("/cs/infoweb/file/cabin-bolditalic-webfont.svg") format("svg"); 
+  font-weight: 700;
+  font-style: italic; } 
+
+
+  
