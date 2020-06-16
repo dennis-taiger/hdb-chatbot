@@ -9,7 +9,7 @@ io.set('transports', ['websocket']);
 
 var conn = function () {
   //  server.listen(process.env.SOCKET_PORT);
-  server.listen(8010);
+  server.listen(80);
   //console.log('Websocket is listening at %s', port);
   app.get('/', function (req, res) {
     res.sendfile(__dirname + '/index.html');
