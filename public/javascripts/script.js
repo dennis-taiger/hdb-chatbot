@@ -6,7 +6,7 @@
 //var socket = io('http://safe-badlands-36894.herokuapp.com:8010');
 //var socket = io();
 
-var socket = io.connect('safe-badlands-36894.herokuapp.com', {
+var socket = io.connect('safe-badlands-36894.herokuapp.com:5000', {
   path: '/socket.io-client',
   transports: ['websocket'],
 });
