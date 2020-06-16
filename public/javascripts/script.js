@@ -3,8 +3,8 @@
 
 /// Change the server address appropriately if you are running on cloud
 //var socket = io.connect('http://localhost');
-//var socket = io.connect('http://safe-badlands-36894.herokuapp.com:8010');
-var socket = io();
+var socket = io('http://safe-badlands-36894.herokuapp.com:8010');
+//var socket = io();
 
 // Add dynamic html bot content(Widget style) ----------------------------
 // You can also add the html content in html page and still it will work!

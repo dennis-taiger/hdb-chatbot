@@ -6,7 +6,7 @@ var api = require('./converse');
 
 var conn = function () {
   //  server.listen(process.env.SOCKET_PORT);
-  const port = 80;
+  const port = 8010;
   server.listen(port);
   console.log('Websocket is listening at %s', port);
   // app.get('/', function (req, res) {
