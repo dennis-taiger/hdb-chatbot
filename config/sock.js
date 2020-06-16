@@ -6,7 +6,7 @@ var api = require('./converse');
 
 var conn = function () {
   //  server.listen(process.env.SOCKET_PORT);
-  server.listen(80);
+  server.listen(8010);
   // app.get('/', function (req, res) {
   //   res.sendfile(__dirname + '/index.html');
   // });
