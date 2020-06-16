@@ -5,11 +5,11 @@ var server = require('http').Server(app);
 var io = require('socket.io')(server, {
   path: '/socket.io-client',
 });
+io.set('transports', ['websocket']);
 
 var conn = function () {
   //  server.listen(process.env.SOCKET_PORT);
-  io.set('transports', ['websocket']);
-  //server.listen(port);
+  server.listen(port);
   //console.log('Websocket is listening at %s', port);
   // app.get('/', function (req, res) {
   //   res.sendfile(__dirname + '/index.html');
