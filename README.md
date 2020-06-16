@@ -5,7 +5,7 @@ A Taiger chatbot demo
 ## .env file
 
 Includes the port number and BOT ID setting.
-Default port is 3000 serving the web page
+Default port is 8080 serving the web page
 
 ## To run the server
 
