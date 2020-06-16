@@ -1,15 +1,6 @@
 //var socket = io.connect(`http://localhost:${process.env.SOCKET_PORT}`);
-//var socket = io.connect('http://localhost:8010');
-
-/// Change the server address appropriately if you are running on cloud
-//var socket = io.connect('http://localhost');
-//var socket = io('http://safe-badlands-36894.herokuapp.com:8010');
-//var socket = io();
-
-var socket = io('safe-badlands-36894.herokuapp.com:5000', {
-  path: '/socket.io-client',
-  transports: ['websocket'],
-});
+var socket = io.connect('http://localhost:5000');
+//var socket = io.connect('http://safe-badlands-36894.herokuapp.com:8010');
 
 // Add dynamic html bot content(Widget style) ----------------------------
 // You can also add the html content in html page and still it will work!

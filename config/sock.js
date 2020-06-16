@@ -1,16 +1,12 @@
-var api = require('./converse');
-
 var app = require('express')();
 var server = require('http').Server(app);
-var io = require('socket.io')(server, {
-  path: '/socket.io-client',
-});
-io.set('transports', ['websocket']);
+var io = require('socket.io')(server);
+
+var api = require('./converse');
 
 var conn = function () {
   //  server.listen(process.env.SOCKET_PORT);
   server.listen(5000);
-  //console.log('Websocket is listening at %s', port);
   app.get('/', function (req, res) {
     res.sendfile(__dirname + '/index.html');
   });
@@ -27,5 +23,4 @@ var fromClient = function () {
     });
   });
 };
-
 module.exports = { conn, fromClient };

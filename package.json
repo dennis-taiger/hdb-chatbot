@@ -6,6 +6,7 @@
     "start": "node ./bin/www",
     "dev": "nodemon ./bin/www"
   },
+  "proxy": "http://localhost:5000",
   "dependencies": {
     "apiai": "^4.0.3",
     "axios": "^0.19.2",
