@@ -1,6 +1,3 @@
-//const dotenv = require('dotenv');
-//dotenv.config();
-
 //var socket = io.connect(`http://localhost:${process.env.SOCKET_PORT}`);
 var socket = io.connect('http://localhost:8010');
 
@@ -56,40 +53,6 @@ $('.close').click(function () {
   $('.chatForm').toggle();
 });
 
-// Session Init (is important so that each user interaction is unique)--------------------------------------
-var session = function () {
-  // Retrieve the object from storage
-  if (sessionStorage.getItem('session')) {
-    var retrievedSession = sessionStorage.getItem('session');
-  } else {
-    // Random Number Generator
-    var randomNo = Math.floor(Math.random() * 1000 + 1);
-    // get Timestamp
-    var timestamp = Date.now();
-    // get Day
-    var date = new Date();
-    var weekday = new Array(7);
-    weekday[0] = 'Sunday';
-    weekday[1] = 'Monday';
-    weekday[2] = 'Tuesday';
-    weekday[3] = 'Wednesday';
-    weekday[4] = 'Thursday';
-    weekday[5] = 'Friday';
-    weekday[6] = 'Saturday';
-    var day = weekday[date.getDay()];
-    // Join random number+day+timestamp
-    var session_id = randomNo + day + timestamp;
-    // Put the object into storage
-    sessionStorage.setItem('session', session_id);
-    var retrievedSession = sessionStorage.getItem('session');
-  }
-  return retrievedSession;
-  // console.log('session: ', retrievedSession);
-};
-
-// Call Session init
-var mysession = session();
-
 // on input/text enter--------------------------------------------------------------------------------------
 $('#chat-input').on('keyup keypress', function (e) {
   var keyCode = e.keyCode || e.which;
@@ -101,7 +64,6 @@ $('#chat-input').on('keyup keypress', function (e) {
     } else {
       $('#chat-input').blur();
       setUserResponse(text);
-      //send(text);
       send2(text);
       e.preventDefault();
       return false;
@@ -123,27 +85,6 @@ socket.on('fromServer', function (data) {
   setBotResponse(data.server);
   //addAction();
 });
-
-//------------------------------------------- Send request to API.AI ---------------------------------------
-function send(text) {
-  $.ajax({
-    type: 'GET',
-    url: baseUrl + 'query=' + text + '&lang=en-us&sessionId=' + mysession,
-    contentType: 'application/json',
-    dataType: 'json',
-    headers: {
-      Authorization: 'Bearer ' + accessToken,
-    },
-    // data: JSON.stringify({ query: text, lang: "en", sessionId: "somerandomthing" }),
-    success: function (data) {
-      main(data);
-      // console.log(data);
-    },
-    error: function (e) {
-      console.log(e);
-    },
-  });
-}
 
 //------------------------------------ Set bot response in result_div -------------------------------------
 function setBotResponse(val) {
