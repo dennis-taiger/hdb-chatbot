@@ -1,4 +1,6 @@
 //var socket = io.connect(`http://localhost:${process.env.SOCKET_PORT}`);
+//var socket = io.connect('http://localhost:8010');
+//var io = require('socket.io-client');
 var socket = io.connect('http://localhost:5000');
 //var socket = io.connect('http://safe-badlands-36894.herokuapp.com:8010');
 
